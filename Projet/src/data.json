@@ -1,0 +1,58 @@
+{
+  "budget": [
+    {
+      "id": 1,
+      "name": "La Banque Postale",
+      "type": "Compte courant",
+      "age": 180,
+      "montant": 30000,
+      "plusvalue": 0,
+      "rendement": 0
+    },
+    {
+      "id": 2,
+      "name": "Boursobank",
+      "type": "Livret A",
+      "age": 60,
+      "montant": 12000,
+      "plusvalue": 0,
+      "rendement": 3
+    },
+    {
+      "id": 3,
+      "name": "Boursobank",
+      "type": "PEA",
+      "age": 82,
+      "montant": 43000,
+      "plusvalue": 9536,
+      "rendement": 18
+    },
+    {
+      "id": 4,
+      "name": "TradeRepublic",
+      "type": "Compte titre",
+      "age": 5,
+      "montant": 11000,
+      "plusvalue": 7058,
+      "rendement": 22
+    },
+    {
+      "id": 5,
+      "name": "La Banque Postale",
+      "type": "Assurance vie",
+      "age": 190,
+      "montant": 952,
+      "plusvalue": 120,
+      "rendement": 9
+    },
+    {
+      "id": 6,
+      "name": "Binance",
+      "type": "Criptomonaie",
+      "age": 2,
+      "montant": 12055,
+      "plusvalue": 5233,
+      "rendement": 27
+    }
+  ]
+}
