@@ -1,19 +1,21 @@
-import {Text, View, TextInput, Button} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { Text, View, TextInput, Button } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 const Tab = createBottomTabNavigator();
 
-import ConnexionScreen from './src/screens/ConnexionScreen';
-import HomeScreen from './src/screens/HomeScreen';
-import Conn from './src/screens/Conn';
-
+import AuthentificationScreen from './src/screens/Authentification/AuthentificationScreen';
+import SingInScreen from './src/screens/Authentification/Components/SingIn';
+import SingUpScreen from './src/screens/Authentification/Components/SingUp';
+import HomeScreen from './src/screens/Home/HomeScreen';
 
 const App = () => {
   return (
     <>
       <NavigationContainer>
         <Tab.Navigator>
-          <Tab.Screen name="ConnexionScreen" component={Conn} />
+          <Tab.Screen name="AuthentificationScreen" component={AuthentificationScreen} />
+          <Tab.Screen name="SingUpScreen" component={SingUpScreen} />
+          <Tab.Screen name="SingInScreen" component={SingInScreen} />
           <Tab.Screen name="HomeScreen" component={HomeScreen} />
         </Tab.Navigator>
       </NavigationContainer>

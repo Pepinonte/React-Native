@@ -1,13 +1,13 @@
-import {Text, View, TextInput, Button} from 'react-native';
-import React, {useState} from 'react';
-import {initializeApp} from 'firebase/app';
+import { Text, View, TextInput, Button } from 'react-native';
+import React, { useState } from 'react';
+import { initializeApp } from 'firebase/app';
 import {
   createUserWithEmailAndPassword,
   getAuth,
   signInWithEmailAndPassword,
 } from 'firebase/auth';
 
-function Conn({navigation}): React.JSX.Element {
+function SingUp({ navigation }) {
   const [mail, setMail] = useState('');
   const [pass, setPass] = useState('');
 
@@ -49,12 +49,8 @@ function Conn({navigation}): React.JSX.Element {
       <TextInput value={mail} onChangeText={setMail} placeholder="mail" />
       <TextInput value={pass} onChangeText={setPass} placeholder="pass" />
       <Button title="register" onPress={() => registerUser(mail, pass)} />
-      <Text>-------------------------------------------------</Text>
-      <TextInput value={mail} onChangeText={setMail} placeholder="mail" />
-      <TextInput value={pass} onChangeText={setPass} placeholder="pass" />
-      <Button title="login" onPress={() => loginUser(mail, pass)} />
     </View>
   );
 }
 
-export default Conn;
+export default SingUp;
