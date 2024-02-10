@@ -15,6 +15,9 @@ const DataList = ({data}) => {
             <Text>
               Plusvalue: {item.plusvalue} - {item.rendement}%
             </Text>
+            <Text>
+              adffasfasdfasfasf
+            </Text>
           </>
         );
       }}
