@@ -32,18 +32,7 @@ function SingUp({ navigation }) {
     } catch (error) {
       console.error(error);
     }
-  };
-
-  // Connexion
-  const loginUser = async (email, password) => {
-    try {
-      await signInWithEmailAndPassword(app, email, password);
-      console.log('Utilisateur connecté');
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
+  }
   return (
     <View>
       <TextInput value={mail} onChangeText={setMail} placeholder="mail" />

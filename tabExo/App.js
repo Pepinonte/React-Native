@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Button, Text, View } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+// import { NavigationContainer } from "@react-navigation/native";
+// import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 function HomeScreen({ navigation }) {
   // console.log(`fsdasff ${JSON.stringify(props.route.params.myData)}`);
